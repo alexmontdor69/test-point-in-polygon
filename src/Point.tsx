@@ -15,8 +15,8 @@ export function PointClicked (point:PointProps){
         if (point.info.isInside) return 'In'
         return 'Out'
     }    
-return(<g>
+return(<g> 
         <circle cx={point.center.x} cy={point.center.y} fill={point.color} r={point.radius} />
-        <text x={point.center.x} y={point.center.y} >{getInfo()}</text>
+        <text x={point.center.x} y={point.center.y} style={{fontSize:'8px'}}>{getInfo()}</text>
     </g>)
 }

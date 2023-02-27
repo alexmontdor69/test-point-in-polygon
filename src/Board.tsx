@@ -56,9 +56,9 @@ export function Board (){
               ref = {board}
             >
                 {polygons.map ((polygon,index)=><Zone key={`polygon${index}`}coordinates={polygon} />)}
-                {point?<PointClicked radius={.5} color={'purple'} {... point}/>:<></>}
                 {beam&&point?<Beam start={beam} end={point.center} color={'lightblue'}/>:<></>}
                 {intersects&&point?intersects?.map((intersect,index)=><Intersect key={`I${index}`} center={intersect} color={'blue'}/>):<></>}
+                {point?<PointClicked radius={.5} color={'purple'} {... point}/>:<></>}
 
         </svg>
     </>)
