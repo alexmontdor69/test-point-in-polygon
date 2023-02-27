@@ -1,4 +1,4 @@
-import { polygonVertices } from "./Board"
+import { polygonVertices } from "./type"
 
 type ZoneProps={coordinates:polygonVertices}
 export function Zone (zone:ZoneProps){
